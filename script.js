@@ -1,3 +1,6 @@
+var event = prompt("Enter your Event: ");
+var eventDate = prompt("Enter date of that event to be occur (\"28 Nov 2021\"in this format) : ");
+
 const secondsEl = document.getElementById('seconds');
 const minutesEl = document.getElementById('mins');
 
@@ -5,9 +8,9 @@ const daysEl = document.getElementById('days');
 
 const hoursEl = document.getElementById('hours');
 
+const newYear = eventDate
 
-const newYear = "28 Nov 2021"
-
+document.getElementById('heading').innerHTML = event;
 function countdown(){
     const newYearsDate = new Date(newYear);
     const currentDate = new Date();
